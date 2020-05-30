@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF04B359242F89B100C4C223 /* CryptoCurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF04B358242F89B100C4C223 /* CryptoCurrencyResponse.swift */; };
+		EF055BCA2426775E0065319D /* CurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF055BC92426775E0065319D /* CurrencyExchangesFetcher.swift */; };
+		EF055BCC2426779D0065319D /* CapitalFiveDayForecastFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF055BCB2426779D0065319D /* CapitalFiveDayForecastFetcher.swift */; };
+		EF05C6832475B22600EE69CC /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C6822475B22600EE69CC /* Loader.swift */; };
+		EF05C6872475E54E00EE69CC /* RemoteAndSaveDollarExchangeRateCurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C6862475E54E00EE69CC /* RemoteAndSaveDollarExchangeRateCurrencyExchangesFetcher.swift */; };
+		EF17822C242BB5B7000D102E /* ExchangeBaseCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF17822B242BB5B7000D102E /* ExchangeBaseCurrencyViewController.swift */; };
+		EF17989C241FCE4A00FCD40F /* FiveDayWeatherForecastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF17989B241FCE4A00FCD40F /* FiveDayWeatherForecastCollectionViewCell.xib */; };
+		EF1798A2241FF9DF00FCD40F /* FiveDayWeatherForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1798A1241FF9DF00FCD40F /* FiveDayWeatherForecastCollectionViewCell.swift */; };
+		EF1E51B524213A2800A93A37 /* MetaWeatherCapitalFiveDayForecastFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E51B424213A2800A93A37 /* MetaWeatherCapitalFiveDayForecastFetcher.swift */; };
+		EF1E8E372475EBA600E235CE /* RemoteAndSaveTimestampedCurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1E8E362475EBA600E235CE /* RemoteAndSaveTimestampedCurrencyExchangesFetcher.swift */; };
+		EF2255DE2421199B0091BF5D /* FiveDayForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2255DD2421199B0091BF5D /* FiveDayForecastCell.swift */; };
+		EF2255E2242126330091BF5D /* FiveDayForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2255E1242126330091BF5D /* FiveDayForecastCell.xib */; };
+		EF231A192406C4E80063733C /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF231A182406C4E80063733C /* CountryDetailViewController.swift */; };
+		EF24574A2431649500DF48ED /* RemoteTimestampedCurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2457492431649500DF48ED /* RemoteTimestampedCurrencyExchangesFetcher.swift */; };
+		EF27424C240444B2002FBCEA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27424B240444B2002FBCEA /* HTTPClient.swift */; };
+		EF27424E240447CF002FBCEA /* RemoteCountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27424D240447CF002FBCEA /* RemoteCountriesFetcher.swift */; };
+		EF274252240450B1002FBCEA /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF274251240450B1002FBCEA /* Country.swift */; };
+		EF28BB7F242FBBC700892285 /* ExchangeCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF28BB7E242FBBC700892285 /* ExchangeCurrencyCell.swift */; };
+		EF28BB81242FBBF600892285 /* ExchangeCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF28BB80242FBBF600892285 /* ExchangeCurrencyCell.xib */; };
+		EF3A245824290DD900888FCF /* ExchangeRateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF3A245724290DD900888FCF /* ExchangeRateCell.xib */; };
+		EF538B54243A372500BBEB6C /* LocalCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF538B53243A372500BBEB6C /* LocalCurrencyCell.swift */; };
+		EF538B56243A373A00BBEB6C /* LocalCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF538B55243A373A00BBEB6C /* LocalCurrencyCell.xib */; };
+		EF538B58243A4BE800BBEB6C /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF538B57243A4BE800BBEB6C /* Coordinates.swift */; };
+		EF70AF4A2471A5A000CEF2F2 /* CountriesFetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70AF492471A5A000CEF2F2 /* CountriesFetchDelegate.swift */; };
+		EF70AF4C2471A5DA00CEF2F2 /* CountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70AF4B2471A5DA00CEF2F2 /* CountriesFetcher.swift */; };
+		EF70AF4E2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70AF4D2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift */; };
+		EF73447A2424DD2C0085C55A /* ExchangeRateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7344792424DD2C0085C55A /* ExchangeRateCell.swift */; };
+		EF734480242501E70085C55A /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF73447F242501E70085C55A /* Currency.swift */; };
+		EF734486242516D00085C55A /* CurrencyExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF734485242516D00085C55A /* CurrencyExchange.swift */; };
+		EF734488242535AB0085C55A /* ExchangeRatesApiFiatCurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF734487242535AB0085C55A /* ExchangeRatesApiFiatCurrencyExchangesFetcher.swift */; };
+		EF7D0C14243F71B10017551C /* TimestampedCurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D0C13243F71B10017551C /* TimestampedCurrencyExchangesFetcher.swift */; };
+		EF7D0C16243F72080017551C /* TimestampedCurrencyExchanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7D0C15243F72080017551C /* TimestampedCurrencyExchanges.swift */; };
+		EF868CBD241E511700BD42D0 /* CurrentWeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CBC241E511700BD42D0 /* CurrentWeatherCell.swift */; };
+		EF868CC5241E586100BD42D0 /* CurrentWeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF868CC4241E586100BD42D0 /* CurrentWeatherCell.xib */; };
+		EF868CC7241E710C00BD42D0 /* MetaWeatherWOEIDFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CC6241E710C00BD42D0 /* MetaWeatherWOEIDFetcher.swift */; };
+		EF868CC9241E73EC00BD42D0 /* MetaWeatherCapitalCurrentWeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CC8241E73EC00BD42D0 /* MetaWeatherCapitalCurrentWeatherFetcher.swift */; };
+		EF868CCB241E799B00BD42D0 /* WeatherState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CCA241E799B00BD42D0 /* WeatherState.swift */; };
+		EF868CCD241E79CB00BD42D0 /* CapitalWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CCC241E79CB00BD42D0 /* CapitalWeather.swift */; };
+		EF868CCF241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CCE241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift */; };
+		EF912845240C279D0042118F /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF912844240C279D0042118F /* Region.swift */; };
+		EF9B43BF2409AE2800245D2C /* CountryMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43BE2409AE2800245D2C /* CountryMapViewController.swift */; };
+		EFA254C7247BE81E006670FD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA254C6247BE81E006670FD /* Error.swift */; };
+		EFD41474247493640074CEB8 /* Helpers+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD41473247493640074CEB8 /* Helpers+UIImage.swift */; };
+		EFD41476247493870074CEB8 /* Helpers+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD41475247493870074CEB8 /* Helpers+UIView.swift */; };
+		EFD67836241015890008FFEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD67835241015890008FFEC /* LaunchScreen.storyboard */; };
+		EFD678382410186B0008FFEC /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD678372410186B0008FFEC /* CountryCell.swift */; };
+		EFD6783C24104BF50008FFEC /* CountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD6783B24104BF50008FFEC /* CountryCell.xib */; };
+		EFDEA4F52430E10900157FC2 /* CoinloreApiCryptoCurrencyExchangesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDEA4F42430E10900157FC2 /* CoinloreApiCryptoCurrencyExchangesFetcher.swift */; };
+		EFEB03D324040DB60051ECDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB03D224040DB60051ECDF /* AppDelegate.swift */; };
+		EFEB03D524040DB60051ECDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB03D424040DB60051ECDF /* SceneDelegate.swift */; };
+		EFEB03D724040DB60051ECDF /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB03D624040DB60051ECDF /* CountriesViewController.swift */; };
+		EFEB03DC24040DB70051ECDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEB03DB24040DB70051ECDF /* Assets.xcassets */; };
+		EFEC4EA92405727100960143 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC4EA82405727100960143 /* ImageLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF04B358242F89B100C4C223 /* CryptoCurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyResponse.swift; sourceTree = "<group>"; };
+		EF055BC92426775E0065319D /* CurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EF055BCB2426779D0065319D /* CapitalFiveDayForecastFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalFiveDayForecastFetcher.swift; sourceTree = "<group>"; };
+		EF05C6822475B22600EE69CC /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		EF05C6862475E54E00EE69CC /* RemoteAndSaveDollarExchangeRateCurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAndSaveDollarExchangeRateCurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EF17822B242BB5B7000D102E /* ExchangeBaseCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeBaseCurrencyViewController.swift; sourceTree = "<group>"; };
+		EF17989B241FCE4A00FCD40F /* FiveDayWeatherForecastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiveDayWeatherForecastCollectionViewCell.xib; sourceTree = "<group>"; };
+		EF1798A1241FF9DF00FCD40F /* FiveDayWeatherForecastCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveDayWeatherForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF1E51B424213A2800A93A37 /* MetaWeatherCapitalFiveDayForecastFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherCapitalFiveDayForecastFetcher.swift; sourceTree = "<group>"; };
+		EF1E8E362475EBA600E235CE /* RemoteAndSaveTimestampedCurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAndSaveTimestampedCurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EF2255DD2421199B0091BF5D /* FiveDayForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastCell.swift; sourceTree = "<group>"; };
+		EF2255E1242126330091BF5D /* FiveDayForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FiveDayForecastCell.xib; sourceTree = "<group>"; };
+		EF231A182406C4E80063733C /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		EF2457492431649500DF48ED /* RemoteTimestampedCurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteTimestampedCurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EF27424B240444B2002FBCEA /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		EF27424D240447CF002FBCEA /* RemoteCountriesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesFetcher.swift; sourceTree = "<group>"; };
+		EF274251240450B1002FBCEA /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		EF28BB7E242FBBC700892285 /* ExchangeCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyCell.swift; sourceTree = "<group>"; };
+		EF28BB80242FBBF600892285 /* ExchangeCurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeCurrencyCell.xib; sourceTree = "<group>"; };
+		EF3A245724290DD900888FCF /* ExchangeRateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeRateCell.xib; sourceTree = "<group>"; };
+		EF538B53243A372500BBEB6C /* LocalCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCurrencyCell.swift; sourceTree = "<group>"; };
+		EF538B55243A373A00BBEB6C /* LocalCurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalCurrencyCell.xib; sourceTree = "<group>"; };
+		EF538B57243A4BE800BBEB6C /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		EF70AF492471A5A000CEF2F2 /* CountriesFetchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesFetchDelegate.swift; sourceTree = "<group>"; };
+		EF70AF4B2471A5DA00CEF2F2 /* CountriesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesFetcher.swift; sourceTree = "<group>"; };
+		EF70AF4D2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAndSaveCountriesFetcher.swift; sourceTree = "<group>"; };
+		EF7344792424DD2C0085C55A /* ExchangeRateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateCell.swift; sourceTree = "<group>"; };
+		EF73447F242501E70085C55A /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		EF734485242516D00085C55A /* CurrencyExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchange.swift; sourceTree = "<group>"; };
+		EF734487242535AB0085C55A /* ExchangeRatesApiFiatCurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesApiFiatCurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EF7D0C13243F71B10017551C /* TimestampedCurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampedCurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EF7D0C15243F72080017551C /* TimestampedCurrencyExchanges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimestampedCurrencyExchanges.swift; sourceTree = "<group>"; };
+		EF868CBC241E511700BD42D0 /* CurrentWeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCell.swift; sourceTree = "<group>"; };
+		EF868CC4241E586100BD42D0 /* CurrentWeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentWeatherCell.xib; sourceTree = "<group>"; };
+		EF868CC6241E710C00BD42D0 /* MetaWeatherWOEIDFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherWOEIDFetcher.swift; sourceTree = "<group>"; };
+		EF868CC8241E73EC00BD42D0 /* MetaWeatherCapitalCurrentWeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaWeatherCapitalCurrentWeatherFetcher.swift; sourceTree = "<group>"; };
+		EF868CCA241E799B00BD42D0 /* WeatherState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherState.swift; sourceTree = "<group>"; };
+		EF868CCC241E79CB00BD42D0 /* CapitalWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalWeather.swift; sourceTree = "<group>"; };
+		EF868CCE241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCurrentWeatherFetcher.swift; sourceTree = "<group>"; };
+		EF912844240C279D0042118F /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		EF9B43BE2409AE2800245D2C /* CountryMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMapViewController.swift; sourceTree = "<group>"; };
+		EFA254C6247BE81E006670FD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		EFD41473247493640074CEB8 /* Helpers+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+UIImage.swift"; sourceTree = "<group>"; };
+		EFD41475247493870074CEB8 /* Helpers+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+UIView.swift"; sourceTree = "<group>"; };
+		EFD67835241015890008FFEC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFD678372410186B0008FFEC /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		EFD6783B24104BF50008FFEC /* CountryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryCell.xib; sourceTree = "<group>"; };
+		EFDEA4F42430E10900157FC2 /* CoinloreApiCryptoCurrencyExchangesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinloreApiCryptoCurrencyExchangesFetcher.swift; sourceTree = "<group>"; };
+		EFEB03CF24040DB60051ECDF /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEB03D224040DB60051ECDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFEB03D424040DB60051ECDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFEB03D624040DB60051ECDF /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		EFEB03DB24040DB70051ECDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFEB03E024040DB70051ECDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFEC4EA82405727100960143 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFEB03CC24040DB50051ECDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF28BB82242FCFC200892285 /* Exchange Rates List */ = {
+			isa = PBXGroup;
+			children = (
+				EF17822B242BB5B7000D102E /* ExchangeBaseCurrencyViewController.swift */,
+				EF28BB7E242FBBC700892285 /* ExchangeCurrencyCell.swift */,
+				EF28BB80242FBBF600892285 /* ExchangeCurrencyCell.xib */,
+			);
+			path = "Exchange Rates List";
+			sourceTree = "<group>";
+		};
+		EF734489242551BE0085C55A /* Exchange Rate Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EF055BC92426775E0065319D /* CurrencyExchangesFetcher.swift */,
+				EF7D0C13243F71B10017551C /* TimestampedCurrencyExchangesFetcher.swift */,
+				EF7D0C15243F72080017551C /* TimestampedCurrencyExchanges.swift */,
+				EF734485242516D00085C55A /* CurrencyExchange.swift */,
+				EF04B358242F89B100C4C223 /* CryptoCurrencyResponse.swift */,
+			);
+			path = "Exchange Rate Feature";
+			sourceTree = "<group>";
+		};
+		EF73448A242552050085C55A /* Exchange Rate API */ = {
+			isa = PBXGroup;
+			children = (
+				EF2457492431649500DF48ED /* RemoteTimestampedCurrencyExchangesFetcher.swift */,
+				EF1E8E362475EBA600E235CE /* RemoteAndSaveTimestampedCurrencyExchangesFetcher.swift */,
+				EF05C6862475E54E00EE69CC /* RemoteAndSaveDollarExchangeRateCurrencyExchangesFetcher.swift */,
+				EF73448C242552440085C55A /* ExchangeRatesApi.io */,
+				EFD535A7242EB3E600BBD28E /* Api.coinlore.net */,
+			);
+			path = "Exchange Rate API";
+			sourceTree = "<group>";
+		};
+		EF73448C242552440085C55A /* ExchangeRatesApi.io */ = {
+			isa = PBXGroup;
+			children = (
+				EF734487242535AB0085C55A /* ExchangeRatesApiFiatCurrencyExchangesFetcher.swift */,
+			);
+			path = ExchangeRatesApi.io;
+			sourceTree = "<group>";
+		};
+		EF868CD0241E922500BD42D0 /* Capital Weather Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EF868CCE241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift */,
+				EF055BCB2426779D0065319D /* CapitalFiveDayForecastFetcher.swift */,
+				EF868CCC241E79CB00BD42D0 /* CapitalWeather.swift */,
+				EF868CCA241E799B00BD42D0 /* WeatherState.swift */,
+			);
+			path = "Capital Weather Feature";
+			sourceTree = "<group>";
+		};
+		EF868CD1241E926600BD42D0 /* Countries API */ = {
+			isa = PBXGroup;
+			children = (
+				EF27424D240447CF002FBCEA /* RemoteCountriesFetcher.swift */,
+				EF70AF4D2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift */,
+			);
+			path = "Countries API";
+			sourceTree = "<group>";
+		};
+		EF868CD2241E929000BD42D0 /* Countries Feature */ = {
+			isa = PBXGroup;
+			children = (
+				EF274251240450B1002FBCEA /* Country.swift */,
+				EF912844240C279D0042118F /* Region.swift */,
+				EF73447F242501E70085C55A /* Currency.swift */,
+				EF538B57243A4BE800BBEB6C /* Coordinates.swift */,
+				EF70AF492471A5A000CEF2F2 /* CountriesFetchDelegate.swift */,
+				EF70AF4B2471A5DA00CEF2F2 /* CountriesFetcher.swift */,
+			);
+			path = "Countries Feature";
+			sourceTree = "<group>";
+		};
+		EF868CD3241E92C800BD42D0 /* Countries List */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB03D624040DB60051ECDF /* CountriesViewController.swift */,
+				EFD678372410186B0008FFEC /* CountryCell.swift */,
+				EFD6783B24104BF50008FFEC /* CountryCell.xib */,
+			);
+			path = "Countries List";
+			sourceTree = "<group>";
+		};
+		EF868CD4241E930300BD42D0 /* Countries Details */ = {
+			isa = PBXGroup;
+			children = (
+				EF231A182406C4E80063733C /* CountryDetailViewController.swift */,
+				EF868CBC241E511700BD42D0 /* CurrentWeatherCell.swift */,
+				EF868CC4241E586100BD42D0 /* CurrentWeatherCell.xib */,
+				EF2255DD2421199B0091BF5D /* FiveDayForecastCell.swift */,
+				EF2255E1242126330091BF5D /* FiveDayForecastCell.xib */,
+				EF1798A1241FF9DF00FCD40F /* FiveDayWeatherForecastCollectionViewCell.swift */,
+				EF17989B241FCE4A00FCD40F /* FiveDayWeatherForecastCollectionViewCell.xib */,
+				EF538B53243A372500BBEB6C /* LocalCurrencyCell.swift */,
+				EF538B55243A373A00BBEB6C /* LocalCurrencyCell.xib */,
+				EF7344792424DD2C0085C55A /* ExchangeRateCell.swift */,
+				EF3A245724290DD900888FCF /* ExchangeRateCell.xib */,
+			);
+			path = "Countries Details";
+			sourceTree = "<group>";
+		};
+		EF868CD5241E933100BD42D0 /* Countries Map */ = {
+			isa = PBXGroup;
+			children = (
+				EF9B43BE2409AE2800245D2C /* CountryMapViewController.swift */,
+			);
+			path = "Countries Map";
+			sourceTree = "<group>";
+		};
+		EF868CD6241E935600BD42D0 /* Countries UI */ = {
+			isa = PBXGroup;
+			children = (
+				EF868CD3241E92C800BD42D0 /* Countries List */,
+				EF868CD4241E930300BD42D0 /* Countries Details */,
+				EF28BB82242FCFC200892285 /* Exchange Rates List */,
+				EF868CD5241E933100BD42D0 /* Countries Map */,
+				EFD67835241015890008FFEC /* LaunchScreen.storyboard */,
+			);
+			path = "Countries UI";
+			sourceTree = "<group>";
+		};
+		EF868CD7241E937500BD42D0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB03D224040DB60051ECDF /* AppDelegate.swift */,
+				EFEB03D424040DB60051ECDF /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EF868CD8241E93A000BD42D0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EF27424B240444B2002FBCEA /* HTTPClient.swift */,
+				EFEC4EA82405727100960143 /* ImageLoader.swift */,
+				EF05C6822475B22600EE69CC /* Loader.swift */,
+				EFA254C6247BE81E006670FD /* Error.swift */,
+				EFD41475247493870074CEB8 /* Helpers+UIView.swift */,
+				EFD41473247493640074CEB8 /* Helpers+UIImage.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EF868CD9241E93AB00BD42D0 /* Metaweather */ = {
+			isa = PBXGroup;
+			children = (
+				EF868CC6241E710C00BD42D0 /* MetaWeatherWOEIDFetcher.swift */,
+				EF868CC8241E73EC00BD42D0 /* MetaWeatherCapitalCurrentWeatherFetcher.swift */,
+				EF1E51B424213A2800A93A37 /* MetaWeatherCapitalFiveDayForecastFetcher.swift */,
+			);
+			path = Metaweather;
+			sourceTree = "<group>";
+		};
+		EF868CDA241E93BB00BD42D0 /* Weather API */ = {
+			isa = PBXGroup;
+			children = (
+				EF868CD9241E93AB00BD42D0 /* Metaweather */,
+			);
+			path = "Weather API";
+			sourceTree = "<group>";
+		};
+		EFD535A7242EB3E600BBD28E /* Api.coinlore.net */ = {
+			isa = PBXGroup;
+			children = (
+				EFDEA4F42430E10900157FC2 /* CoinloreApiCryptoCurrencyExchangesFetcher.swift */,
+			);
+			path = Api.coinlore.net;
+			sourceTree = "<group>";
+		};
+		EFEB03C624040DB50051ECDF = {
+			isa = PBXGroup;
+			children = (
+				EFEB03D124040DB60051ECDF /* Countries */,
+				EFEB03D024040DB60051ECDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFEB03D024040DB60051ECDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFEB03CF24040DB60051ECDF /* Countries.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFEB03D124040DB60051ECDF /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				EF868CD7241E937500BD42D0 /* Main */,
+				EF868CD6241E935600BD42D0 /* Countries UI */,
+				EF868CD1241E926600BD42D0 /* Countries API */,
+				EF868CD2241E929000BD42D0 /* Countries Feature */,
+				EF868CDA241E93BB00BD42D0 /* Weather API */,
+				EF868CD0241E922500BD42D0 /* Capital Weather Feature */,
+				EF73448A242552050085C55A /* Exchange Rate API */,
+				EF734489242551BE0085C55A /* Exchange Rate Feature */,
+				EF868CD8241E93A000BD42D0 /* Shared */,
+				EFEB03DB24040DB70051ECDF /* Assets.xcassets */,
+				EFEB03E024040DB70051ECDF /* Info.plist */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFEB03CE24040DB50051ECDF /* Countries */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFEB03EE24040DB70051ECDF /* Build configuration list for PBXNativeTarget "Countries" */;
+			buildPhases = (
+				EFEB03CB24040DB50051ECDF /* Sources */,
+				EFEB03CC24040DB50051ECDF /* Frameworks */,
+				EFEB03CD24040DB50051ECDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Countries;
+			productName = Countries;
+			productReference = EFEB03CF24040DB60051ECDF /* Countries.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFEB03C724040DB50051ECDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Chris Zarmakoupis";
+				TargetAttributes = {
+					EFEB03CE24040DB50051ECDF = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = EFEB03CA24040DB50051ECDF /* Build configuration list for PBXProject "Countries" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFEB03C624040DB50051ECDF;
+			productRefGroup = EFEB03D024040DB60051ECDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFEB03CE24040DB50051ECDF /* Countries */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFEB03CD24040DB50051ECDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD6783C24104BF50008FFEC /* CountryCell.xib in Resources */,
+				EF538B56243A373A00BBEB6C /* LocalCurrencyCell.xib in Resources */,
+				EF2255E2242126330091BF5D /* FiveDayForecastCell.xib in Resources */,
+				EF3A245824290DD900888FCF /* ExchangeRateCell.xib in Resources */,
+				EFD67836241015890008FFEC /* LaunchScreen.storyboard in Resources */,
+				EF868CC5241E586100BD42D0 /* CurrentWeatherCell.xib in Resources */,
+				EF17989C241FCE4A00FCD40F /* FiveDayWeatherForecastCollectionViewCell.xib in Resources */,
+				EFEB03DC24040DB70051ECDF /* Assets.xcassets in Resources */,
+				EF28BB81242FBBF600892285 /* ExchangeCurrencyCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFEB03CB24040DB50051ECDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF868CC7241E710C00BD42D0 /* MetaWeatherWOEIDFetcher.swift in Sources */,
+				EF274252240450B1002FBCEA /* Country.swift in Sources */,
+				EFEC4EA92405727100960143 /* ImageLoader.swift in Sources */,
+				EF17822C242BB5B7000D102E /* ExchangeBaseCurrencyViewController.swift in Sources */,
+				EF912845240C279D0042118F /* Region.swift in Sources */,
+				EF868CBD241E511700BD42D0 /* CurrentWeatherCell.swift in Sources */,
+				EFEB03D724040DB60051ECDF /* CountriesViewController.swift in Sources */,
+				EF7D0C16243F72080017551C /* TimestampedCurrencyExchanges.swift in Sources */,
+				EF05C6872475E54E00EE69CC /* RemoteAndSaveDollarExchangeRateCurrencyExchangesFetcher.swift in Sources */,
+				EF1798A2241FF9DF00FCD40F /* FiveDayWeatherForecastCollectionViewCell.swift in Sources */,
+				EF538B54243A372500BBEB6C /* LocalCurrencyCell.swift in Sources */,
+				EF73447A2424DD2C0085C55A /* ExchangeRateCell.swift in Sources */,
+				EF1E8E372475EBA600E235CE /* RemoteAndSaveTimestampedCurrencyExchangesFetcher.swift in Sources */,
+				EF734488242535AB0085C55A /* ExchangeRatesApiFiatCurrencyExchangesFetcher.swift in Sources */,
+				EFD41474247493640074CEB8 /* Helpers+UIImage.swift in Sources */,
+				EF27424C240444B2002FBCEA /* HTTPClient.swift in Sources */,
+				EF24574A2431649500DF48ED /* RemoteTimestampedCurrencyExchangesFetcher.swift in Sources */,
+				EF1E51B524213A2800A93A37 /* MetaWeatherCapitalFiveDayForecastFetcher.swift in Sources */,
+				EFEB03D324040DB60051ECDF /* AppDelegate.swift in Sources */,
+				EF70AF4C2471A5DA00CEF2F2 /* CountriesFetcher.swift in Sources */,
+				EF27424E240447CF002FBCEA /* RemoteCountriesFetcher.swift in Sources */,
+				EF868CCD241E79CB00BD42D0 /* CapitalWeather.swift in Sources */,
+				EF055BCC2426779D0065319D /* CapitalFiveDayForecastFetcher.swift in Sources */,
+				EF538B58243A4BE800BBEB6C /* Coordinates.swift in Sources */,
+				EF734480242501E70085C55A /* Currency.swift in Sources */,
+				EFA254C7247BE81E006670FD /* Error.swift in Sources */,
+				EFD678382410186B0008FFEC /* CountryCell.swift in Sources */,
+				EF9B43BF2409AE2800245D2C /* CountryMapViewController.swift in Sources */,
+				EFEB03D524040DB60051ECDF /* SceneDelegate.swift in Sources */,
+				EF04B359242F89B100C4C223 /* CryptoCurrencyResponse.swift in Sources */,
+				EF2255DE2421199B0091BF5D /* FiveDayForecastCell.swift in Sources */,
+				EF055BCA2426775E0065319D /* CurrencyExchangesFetcher.swift in Sources */,
+				EF231A192406C4E80063733C /* CountryDetailViewController.swift in Sources */,
+				EF868CCF241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift in Sources */,
+				EF28BB7F242FBBC700892285 /* ExchangeCurrencyCell.swift in Sources */,
+				EFD41476247493870074CEB8 /* Helpers+UIView.swift in Sources */,
+				EF7D0C14243F71B10017551C /* TimestampedCurrencyExchangesFetcher.swift in Sources */,
+				EFDEA4F52430E10900157FC2 /* CoinloreApiCryptoCurrencyExchangesFetcher.swift in Sources */,
+				EF70AF4A2471A5A000CEF2F2 /* CountriesFetchDelegate.swift in Sources */,
+				EF868CCB241E799B00BD42D0 /* WeatherState.swift in Sources */,
+				EF70AF4E2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift in Sources */,
+				EF868CC9241E73EC00BD42D0 /* MetaWeatherCapitalCurrentWeatherFetcher.swift in Sources */,
+				EF05C6832475B22600EE69CC /* Loader.swift in Sources */,
+				EF734486242516D00085C55A /* CurrencyExchange.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFEB03EC24040DB70051ECDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFEB03ED24040DB70051ECDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFEB03EF24040DB70051ECDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3H447U8PU;
+				INFOPLIST_FILE = Countries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czarmakoupis.Countries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFEB03F024040DB70051ECDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3H447U8PU;
+				INFOPLIST_FILE = Countries/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czarmakoupis.Countries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFEB03CA24040DB50051ECDF /* Build configuration list for PBXProject "Countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEB03EC24040DB70051ECDF /* Debug */,
+				EFEB03ED24040DB70051ECDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFEB03EE24040DB70051ECDF /* Build configuration list for PBXNativeTarget "Countries" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFEB03EF24040DB70051ECDF /* Debug */,
+				EFEB03F024040DB70051ECDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFEB03C724040DB50051ECDF /* Project object */;
+}
