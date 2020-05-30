@@ -19,7 +19,6 @@ App Features
 
 - Shows a list of all countries with their flags, grouped by region.
 - Shows information about the selected country.
-- Shows information about the selected country.
 - Shows selected country in map.
 - Shows capital's today's weather, when available.
 - Shows capital's five day forecast, when available.
