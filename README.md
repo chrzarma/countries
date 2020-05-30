@@ -24,3 +24,11 @@ App Features
 - Shows capital's five day forecast, when available.
 - Shows the exchange rate of the local currency to USD.
 - Shows the exchange rate of the local currency to other currencies and to cryptocurrencies.
+
+## App Screenshots
+
+![countries](https://github.com/chrzarma/countries/blob/master/CountriesViewController.png)
+![countries](https://github.com/chrzarma/countries/blob/master/CountriesDetailViewController.png)
+![countries](https://github.com/chrzarma/countries/blob/master/CountriesExchangeRatesViewController.png)
+![countries](https://github.com/chrzarma/countries/blob/master/CountriesExchangeRatesViewControllerWhenCellTapped.png)
+![countries](https://github.com/chrzarma/countries/blob/master/CryptosExchangeRate.png)
