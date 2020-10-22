@@ -47,7 +47,7 @@ class CountryDetailViewController: UIViewController, UITableViewDataSource, UITa
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.roundingMode = .halfUp
-        formatter.maximumFractionDigits = 5
+        formatter.maximumSignificantDigits = 2
         formatter.locale = Locale.current
         return formatter
     }()
