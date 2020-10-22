@@ -9,6 +9,8 @@ Countries is an iOS client project that uses the following apis to search and do
 - https://exchangeratesapi.io (for foreign exchange rates)
 - https://www.coinlore.com/cryptocurrency-data-api (for crypto apis)
 
+By applying Clean Code and the SOLID principles I managed to make this application perform optimally.
+
 This project has been written in Swift 5.0.
 
 ## Features
