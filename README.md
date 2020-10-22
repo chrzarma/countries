@@ -2,12 +2,12 @@
 
 ## Summary
 
-Countries is an iOS client project that uses the following apis to search and download information about countries:
+Countries is an iOS client project that uses the following APIs to search and download information about countries:
 
 - https://restcountries.eu (for countries information)
 - https://www.metaweather.com/api/ (for weather information)
 - https://exchangeratesapi.io (for foreign exchange rates)
-- https://www.coinlore.com/cryptocurrency-data-api (for crypto apis)
+- https://www.coinlore.com/cryptocurrency-data-api (for crypto exchange rates)
 
 By applying Clean Code and the SOLID principles I managed to make this application perform optimally.
 
