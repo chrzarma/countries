@@ -190,7 +190,9 @@ class ExchangeBaseCurrencyViewController: UIViewController, UITableViewDataSourc
     private func map(_ currencyExchanges: [CurrencyExchange]) -> [CurrencyExchange]{
         var mappedExchangeRates = [CurrencyExchange]()
         currencyExchanges.forEach { exchangeRate in
-            mappedExchangeRates.append(CurrencyExchange(from: exchangeRate.to, to: exchangeRate.from, exchangeRate: 1/exchangeRate.exchangeRate))
+            let decimalExchangeRate = 1/Decimal(floatLiteral: exchangeRate.exchangeRate)
+            let doubleExchangeRate = (decimalExchangeRate as NSDecimalNumber).doubleValue
+            mappedExchangeRates.append(CurrencyExchange(from: exchangeRate.to, to: exchangeRate.from, exchangeRate: doubleExchangeRate))
         }
         
         return mappedExchangeRates

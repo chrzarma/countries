@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Network
 
 final class HTTPClient {
     func downloadData(from url: URL, completion: @escaping (Result<Data, Error>) -> Void) {
