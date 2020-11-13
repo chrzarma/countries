@@ -57,7 +57,7 @@ class ExchangeBaseCurrencyViewController: UIViewController, UITableViewDataSourc
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.roundingMode = .halfUp
-        formatter.maximumSignificantDigits = 2
+        formatter.maximumFractionDigits = 2
         formatter.locale = Locale.current
         return formatter
     }()
