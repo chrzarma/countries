@@ -204,7 +204,8 @@ class CountryDetailViewController: UIViewController, UITableViewDataSource, UITa
                                     value: String,
                                     accessory: UITableViewCell.AccessoryType ) -> UITableViewCell {
         let cell = UITableViewCell(style: .value1, reuseIdentifier: nil)
-        cell.detailTextLabel?.textColor = .black
+        cell.textLabel?.textColor = .label
+        cell.detailTextLabel?.textColor = .label
         cell.textLabel?.text = title
         cell.detailTextLabel?.text = value
         cell.selectionStyle = .none

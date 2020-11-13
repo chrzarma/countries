@@ -292,7 +292,7 @@ class CountriesViewController: UIViewController, UITableViewDataSource, UITableV
         searchBar.delegate = self
         searchBar.placeholder = "Search Countries"
         searchBar.barTintColor = .black
-        searchBar.searchTextField.backgroundColor = .white
+        searchBar.searchTextField.backgroundColor = .secondarySystemBackground
     }
     
     private func setup(tableView: UITableView, in view: UIView) {
