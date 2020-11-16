@@ -47,7 +47,7 @@ class CountryDetailViewController: UIViewController, UITableViewDataSource, UITa
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
         formatter.roundingMode = .halfUp
-        formatter.maximumSignificantDigits = 2
+        formatter.maximumFractionDigits = 2
         formatter.locale = Locale.current
         return formatter
     }()
@@ -303,7 +303,7 @@ class CountryDetailViewController: UIViewController, UITableViewDataSource, UITa
             switch result {
             case .success(let currencyExchanges):
                 if let currencyExchange = currencyExchanges.first(where: {$0.to.code == self?.toCurrency.code }) {
-                    let exchangeRateString = self?.numberFormatter.string(from: NSNumber(value: currencyExchange.exchangeRate))
+                    let exchangeRateString = CustomCurrencyFormatter.input(String(currencyExchange.exchangeRate))
                     self?.exchangeRateAvailable = true
                     exchangeRate = "1 \(currencyExchange.from.code) \(currencyExchange.from.symbol) = " + (exchangeRateString ?? "") + " \(currencyExchange.to.code) \(currencyExchange.to.symbol)"
                 } else {
@@ -311,7 +311,7 @@ class CountryDetailViewController: UIViewController, UITableViewDataSource, UITa
                 }
             case .failure:
                 if let currencyExchange = self?.loader?.loadDollarCurrencyExchange(for: currency) {
-                    let exchangeRateString = self?.numberFormatter.string(from: NSNumber(value: currencyExchange.exchangeRate))
+                    let exchangeRateString = CustomCurrencyFormatter.input(String(currencyExchange.exchangeRate))
                     self?.exchangeRateAvailable = true
                     exchangeRate = "1 \(currencyExchange.from.code) \(currencyExchange.from.symbol) = " + (exchangeRateString ?? "") + " \(currencyExchange.to.code) \(currencyExchange.to.symbol)"
                 } else {

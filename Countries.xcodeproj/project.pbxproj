@@ -30,6 +30,7 @@
 		EF538B54243A372500BBEB6C /* LocalCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF538B53243A372500BBEB6C /* LocalCurrencyCell.swift */; };
 		EF538B56243A373A00BBEB6C /* LocalCurrencyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF538B55243A373A00BBEB6C /* LocalCurrencyCell.xib */; };
 		EF538B58243A4BE800BBEB6C /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF538B57243A4BE800BBEB6C /* Coordinates.swift */; };
+		EF6364B42562F8B000FD3ED9 /* CustomCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6364B32562F8B000FD3ED9 /* CustomCurrencyFormatter.swift */; };
 		EF70AF4A2471A5A000CEF2F2 /* CountriesFetchDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70AF492471A5A000CEF2F2 /* CountriesFetchDelegate.swift */; };
 		EF70AF4C2471A5DA00CEF2F2 /* CountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70AF4B2471A5DA00CEF2F2 /* CountriesFetcher.swift */; };
 		EF70AF4E2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF70AF4D2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift */; };
@@ -86,6 +87,7 @@
 		EF538B53243A372500BBEB6C /* LocalCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalCurrencyCell.swift; sourceTree = "<group>"; };
 		EF538B55243A373A00BBEB6C /* LocalCurrencyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalCurrencyCell.xib; sourceTree = "<group>"; };
 		EF538B57243A4BE800BBEB6C /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		EF6364B32562F8B000FD3ED9 /* CustomCurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurrencyFormatter.swift; sourceTree = "<group>"; };
 		EF70AF492471A5A000CEF2F2 /* CountriesFetchDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesFetchDelegate.swift; sourceTree = "<group>"; };
 		EF70AF4B2471A5DA00CEF2F2 /* CountriesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesFetcher.swift; sourceTree = "<group>"; };
 		EF70AF4D2471A68500CEF2F2 /* RemoteAndSaveCountriesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAndSaveCountriesFetcher.swift; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				EF27424B240444B2002FBCEA /* HTTPClient.swift */,
 				EFEC4EA82405727100960143 /* ImageLoader.swift */,
+				EF6364B32562F8B000FD3ED9 /* CustomCurrencyFormatter.swift */,
 				EF05C6822475B22600EE69CC /* Loader.swift */,
 				EFA254C6247BE81E006670FD /* Error.swift */,
 				EFD41475247493870074CEB8 /* Helpers+UIView.swift */,
@@ -435,6 +438,7 @@
 				EF70AF4C2471A5DA00CEF2F2 /* CountriesFetcher.swift in Sources */,
 				EF27424E240447CF002FBCEA /* RemoteCountriesFetcher.swift in Sources */,
 				EF868CCD241E79CB00BD42D0 /* CapitalWeather.swift in Sources */,
+				EF6364B42562F8B000FD3ED9 /* CustomCurrencyFormatter.swift in Sources */,
 				EF055BCC2426779D0065319D /* CapitalFiveDayForecastFetcher.swift in Sources */,
 				EF538B58243A4BE800BBEB6C /* Coordinates.swift in Sources */,
 				EF734480242501E70085C55A /* Currency.swift in Sources */,

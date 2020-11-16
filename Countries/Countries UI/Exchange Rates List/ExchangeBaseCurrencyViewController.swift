@@ -52,16 +52,7 @@ class ExchangeBaseCurrencyViewController: UIViewController, UITableViewDataSourc
         }
     }
     private var localCurrencyStatus = LocalCurrencyStatus.base
-    
-    private lazy var numberFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.roundingMode = .halfUp
-        formatter.maximumFractionDigits = 2
-        formatter.locale = Locale.current
-        return formatter
-    }()
-    
+
     private lazy var dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MM-yyyy, HH:mm"
@@ -224,7 +215,8 @@ class ExchangeBaseCurrencyViewController: UIViewController, UITableViewDataSourc
             cell.detailLabel?.text = ""
             cell.spinner.startAnimating()
         } else {
-            guard let currencyExchangeString = numberFormatter.string(from: NSNumber(value: currencyExchangeRate)) else {
+            guard let currencyExchangeString = CustomCurrencyFormatter.input(String(currencyExchangeRate))
+            else {
                 cell.spinner.stopAnimating()
                 cell.detailLabel?.text = "N/A"
                 return cell
