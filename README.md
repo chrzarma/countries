@@ -25,8 +25,5 @@ App Features
 
 ## App Screenshots
 
-![countries](https://github.com/chrzarma/countries/blob/master/CountriesViewController.png)
-![countries](https://github.com/chrzarma/countries/blob/master/CountriesDetailViewController.png)
-![countries](https://github.com/chrzarma/countries/blob/master/CountriesExchangeRatesViewController.png)
-![countries](https://github.com/chrzarma/countries/blob/master/CountriesExchangeRatesViewControllerWhenCellTapped.png)
-![countries](https://github.com/chrzarma/countries/blob/master/CryptosExchangeRate.png)
+![countries](https://github.com/chrzarma/countries/blob/master/LightTheme.png)
+![countries](https://github.com/chrzarma/countries/blob/master/DarkTheme.png)
