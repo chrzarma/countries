@@ -27,3 +27,17 @@ App Features
 
 ![countries](https://github.com/chrzarma/countries/blob/master/LightTheme.png)
 ![countries](https://github.com/chrzarma/countries/blob/master/DarkTheme.png)
+
+## Features Breakdown
+
+- Why does the app have to cache the data? 
+
+If the device has an active and available network then the user will get access to any of the data he wants to see. But if the network is inactive or not available, I thought that it would be more appropriate and useful to show to the User the last data he received and inform him about the validation of time-sensitive data received (for example the date of the exchange rates).
+
+- What happens when the cache is empty and there is no available network?
+
+Then the app informs the user that there is no valid connection and that he should try again after establishing a valid connection.
+
+- What happens if you want to replace any of the APIs you use to retrieve data?
+
+By using protocol implementations as boundaries between the network module and the main module (in order to depend on abstractions), we have the flexibility to change the API we use to retrieve the data by only making the new API to conform to the protocol we have implemented
