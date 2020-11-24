@@ -48,8 +48,10 @@
 		EF868CCD241E79CB00BD42D0 /* CapitalWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CCC241E79CB00BD42D0 /* CapitalWeather.swift */; };
 		EF868CCF241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF868CCE241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift */; };
 		EF912845240C279D0042118F /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF912844240C279D0042118F /* Region.swift */; };
+		EF943646256D4B1A00F27FF0 /* CustomCurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF943645256D4B1A00F27FF0 /* CustomCurrencyFormatterTests.swift */; };
 		EF9B43BF2409AE2800245D2C /* CountryMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B43BE2409AE2800245D2C /* CountryMapViewController.swift */; };
 		EFA254C7247BE81E006670FD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA254C6247BE81E006670FD /* Error.swift */; };
+		EFD09244256D4D8F00CD22C0 /* CustomCurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6364B32562F8B000FD3ED9 /* CustomCurrencyFormatter.swift */; };
 		EFD41474247493640074CEB8 /* Helpers+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD41473247493640074CEB8 /* Helpers+UIImage.swift */; };
 		EFD41476247493870074CEB8 /* Helpers+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD41475247493870074CEB8 /* Helpers+UIView.swift */; };
 		EFD67836241015890008FFEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFD67835241015890008FFEC /* LaunchScreen.storyboard */; };
@@ -62,6 +64,16 @@
 		EFEB03DC24040DB70051ECDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEB03DB24040DB70051ECDF /* Assets.xcassets */; };
 		EFEC4EA92405727100960143 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEC4EA82405727100960143 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF943648256D4B1A00F27FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFEB03C724040DB50051ECDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFEB03CE24040DB50051ECDF;
+			remoteInfo = Countries;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EF04B358242F89B100C4C223 /* CryptoCurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrencyResponse.swift; sourceTree = "<group>"; };
@@ -105,6 +117,9 @@
 		EF868CCC241E79CB00BD42D0 /* CapitalWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalWeather.swift; sourceTree = "<group>"; };
 		EF868CCE241E7A0000BD42D0 /* CapitalCurrentWeatherFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalCurrentWeatherFetcher.swift; sourceTree = "<group>"; };
 		EF912844240C279D0042118F /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		EF943643256D4B1A00F27FF0 /* CountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF943645256D4B1A00F27FF0 /* CustomCurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCurrencyFormatterTests.swift; sourceTree = "<group>"; };
+		EF943647256D4B1A00F27FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF9B43BE2409AE2800245D2C /* CountryMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryMapViewController.swift; sourceTree = "<group>"; };
 		EFA254C6247BE81E006670FD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		EFD41473247493640074CEB8 /* Helpers+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers+UIImage.swift"; sourceTree = "<group>"; };
@@ -123,6 +138,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EF943640256D4B1A00F27FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFEB03CC24040DB50051ECDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,6 +319,15 @@
 			path = "Weather API";
 			sourceTree = "<group>";
 		};
+		EF943644256D4B1A00F27FF0 /* CountriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF943645256D4B1A00F27FF0 /* CustomCurrencyFormatterTests.swift */,
+				EF943647256D4B1A00F27FF0 /* Info.plist */,
+			);
+			path = CountriesTests;
+			sourceTree = "<group>";
+		};
 		EFD535A7242EB3E600BBD28E /* Api.coinlore.net */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				EFEB03D124040DB60051ECDF /* Countries */,
+				EF943644256D4B1A00F27FF0 /* CountriesTests */,
 				EFEB03D024040DB60051ECDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -317,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				EFEB03CF24040DB60051ECDF /* Countries.app */,
+				EF943643256D4B1A00F27FF0 /* CountriesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -342,6 +375,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EF943642256D4B1A00F27FF0 /* CountriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF94364C256D4B1A00F27FF0 /* Build configuration list for PBXNativeTarget "CountriesTests" */;
+			buildPhases = (
+				EF94363F256D4B1A00F27FF0 /* Sources */,
+				EF943640256D4B1A00F27FF0 /* Frameworks */,
+				EF943641256D4B1A00F27FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF943649256D4B1A00F27FF0 /* PBXTargetDependency */,
+			);
+			name = CountriesTests;
+			productName = CountriesTests;
+			productReference = EF943643256D4B1A00F27FF0 /* CountriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EFEB03CE24040DB50051ECDF /* Countries */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFEB03EE24040DB70051ECDF /* Build configuration list for PBXNativeTarget "Countries" */;
@@ -369,6 +420,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Chris Zarmakoupis";
 				TargetAttributes = {
+					EF943642256D4B1A00F27FF0 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = EFEB03CE24040DB50051ECDF;
+					};
 					EFEB03CE24040DB50051ECDF = {
 						CreatedOnToolsVersion = 11.2;
 					};
@@ -388,11 +443,19 @@
 			projectRoot = "";
 			targets = (
 				EFEB03CE24040DB50051ECDF /* Countries */,
+				EF943642256D4B1A00F27FF0 /* CountriesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EF943641256D4B1A00F27FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFEB03CD24040DB50051ECDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +475,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EF94363F256D4B1A00F27FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFD09244256D4D8F00CD22C0 /* CustomCurrencyFormatter.swift in Sources */,
+				EF943646256D4B1A00F27FF0 /* CustomCurrencyFormatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EFEB03CB24040DB50051ECDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,7 +538,57 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EF943649256D4B1A00F27FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFEB03CE24040DB50051ECDF /* Countries */;
+			targetProxy = EF943648256D4B1A00F27FF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		EF94364A256D4B1A00F27FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3H447U8PU;
+				INFOPLIST_FILE = CountriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czarmakoupis.CountriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries.app/Countries";
+			};
+			name = Debug;
+		};
+		EF94364B256D4B1A00F27FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3H447U8PU;
+				INFOPLIST_FILE = CountriesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czarmakoupis.CountriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countries.app/Countries";
+			};
+			name = Release;
+		};
 		EFEB03EC24040DB70051ECDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -622,6 +744,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EF94364C256D4B1A00F27FF0 /* Build configuration list for PBXNativeTarget "CountriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF94364A256D4B1A00F27FF0 /* Debug */,
+				EF94364B256D4B1A00F27FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EFEB03CA24040DB50051ECDF /* Build configuration list for PBXProject "Countries" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
